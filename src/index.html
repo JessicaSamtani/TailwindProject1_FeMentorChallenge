@@ -1,13 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+
+  <body>
+    <div class="flex min-h-screen">
+      <div
+        class="flex items-center w-7/12 bg-no-repeat bg-cover text-section bg-bgPattern"
+      >
+        <div
+          class="flex flex-col justify-center h-screen max-w-3xl gap-8 px-20 mx-auto textsection-wrapper"
+        >
+          <div class="logo mt-30">
+            <img src="/images/logo.svg" alt="logo" />
+          </div>
+
+          <h1 class="mt-36 uppercase text-6xl leading-tighter tracking-[.30em]">
+            <span class="font-light text-desaturatedRed">we're</span> <br />
+            coming <br />
+            soon
+          </h1>
+          <p
+            class="max-w-md leading-loose text-md text-desaturatedRed opacity-80"
+          >
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form action="#" class="flex">
+            <input
+              class="pl-10 border-2 rounded-full focus-within:border-red-300 border-desaturatedRed border-opacity-40 h-14 w-96 placeholder:text-opacity-50 placeholder:text-desaturatedRed"
+              type="email"
+              placeholder="Email Address"
+            />
+            <button
+              class="bg-desaturatedRed w-24 cursor-pointer rounded-full h-14 -ml-14 flex justify-center items-center right-0 bg-gradient-to-r from-[rgba(248,191,191,1)] from-0% to-[rgba(238,140,140,1)] to-47% hover:to-pink-200 hover:scale-110"
+            >
+              <img src="/images/icon-arrow.svg" alt="Iconarrow" />
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div
+        class="w-5/12 bg-red-700 bg-no-repeat bg-cover image-section bg-bgImageDesktop"
+      ></div>
+    </div>
+  </body>
 </html>
