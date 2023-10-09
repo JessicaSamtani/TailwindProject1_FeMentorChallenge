@@ -15,24 +15,34 @@
   </head>
 
   <body>
-    <div class="flex min-h-screen">
+    <div class="h-screen flex flex-col md:flex-row-reverse">
+      <div class="bg-bgPattern p-9 logo md:hidden md:pt-36">
+        <img src="/images/logo.svg" alt="logo" />
+      </div>
+
       <div
-        class="flex items-center w-7/12 bg-no-repeat bg-cover text-section bg-bgPattern"
+        class="min-h-[300px] bg-red-700 bg-cover image-section bg-bgImageMobile md:bg-bgImageDesktop md:w-5/12"
+      ></div>
+
+      <div
+        class="text-center h-full bg-no-repeat md:items-center text-section md:text-left md:bg-cover bg-bgPattern md:w-7/12"
       >
         <div
-          class="flex flex-col justify-center h-screen max-w-3xl gap-8 px-20 mx-auto textsection-wrapper"
+          class="flex flex-col justify-center gap-8 mx-auto md:px-28 md:max-w-3xl md:min-h-screen textsection-wrapper"
         >
-          <div class="logo mt-30">
+          <div class="hidden md:block logo pt-32">
             <img src="/images/logo.svg" alt="logo" />
           </div>
 
-          <h1 class="mt-36 uppercase text-6xl leading-tighter tracking-[.30em]">
+          <h1
+            class="mt-24 uppercase md:text-6xl text-5xl leading-tighter tracking-[.30em]"
+          >
             <span class="font-light text-desaturatedRed">we're</span> <br />
             coming <br />
             soon
           </h1>
           <p
-            class="max-w-md leading-loose text-md text-desaturatedRed opacity-80"
+            class="w-[350px] mx-auto text-center leading-relaxed text-desaturatedRed opacity-80 md:text-left md:mx-0 md:w-9/12"
           >
             Hello fellow shoppers! We're currently building our new fashion
             store. Add your email below to stay up-to-date with announcements
@@ -40,22 +50,18 @@
           </p>
           <form action="#" class="flex">
             <input
-              class="pl-10 border-2 rounded-full focus-within:border-red-300 border-desaturatedRed border-opacity-40 h-14 w-96 placeholder:text-opacity-50 placeholder:text-desaturatedRed"
+              class="w-80 mx-auto pl-10 border-2 rounded-full bg-transparent focus-within:border-red-300 border-desaturatedRed border-opacity-40 h-14 md:w-96 placeholder:text-opacity-50 placeholder:text-desaturatedRed md:mx-0"
               type="email"
               placeholder="Email Address"
             />
             <button
-              class="bg-desaturatedRed w-24 cursor-pointer rounded-full h-14 -ml-14 flex justify-center items-center right-0 bg-gradient-to-r from-[rgba(248,191,191,1)] from-0% to-[rgba(238,140,140,1)] to-47% hover:to-pink-200 hover:scale-110"
+              class="bg-desaturatedRed mx-auto w-16 cursor-pointer rounded-full h-14 mb-28 -ml-20 flex justify-center items-center right-0 bg-gradient-to-r from-[rgba(248,191,191,1)] from-0% to-[rgba(238,140,140,1)] to-47% hover:to-pink-100 hover:scale-110 md:w-24"
             >
               <img src="/images/icon-arrow.svg" alt="Iconarrow" />
             </button>
           </form>
         </div>
       </div>
-
-      <div
-        class="w-5/12 bg-red-700 bg-no-repeat bg-cover image-section bg-bgImageDesktop"
-      ></div>
     </div>
   </body>
 </html>
