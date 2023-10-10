@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="./input.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <div class="h-screen flex flex-col md:flex-row-reverse">
+    <div class="flex flex-col h-screen md:flex-row-reverse">
       <div class="bg-bgPattern p-9 logo md:hidden md:pt-36">
         <img src="/images/logo.svg" alt="logo" />
       </div>
@@ -25,12 +25,12 @@
       ></div>
 
       <div
-        class="text-center h-full bg-no-repeat md:items-center text-section md:text-left md:bg-cover bg-bgPattern md:w-7/12"
+        class="h-full text-center bg-no-repeat md:items-center text-section md:text-left md:bg-cover bg-bgPattern md:w-7/12"
       >
         <div
           class="flex flex-col justify-center gap-8 mx-auto md:px-28 md:max-w-3xl md:min-h-screen textsection-wrapper"
         >
-          <div class="hidden md:block logo pt-32">
+          <div class="hidden pt-32 md:block logo">
             <img src="/images/logo.svg" alt="logo" />
           </div>
 
@@ -50,7 +50,7 @@
           </p>
           <form action="#" class="flex">
             <input
-              class="w-80 mx-auto pl-10 border-2 rounded-full bg-transparent focus-within:border-red-300 border-desaturatedRed border-opacity-40 h-14 md:w-96 placeholder:text-opacity-50 placeholder:text-desaturatedRed md:mx-0"
+              class="pl-10 mx-auto bg-transparent border-2 rounded-full w-80 focus-within:border-red-300 border-desaturatedRed border-opacity-40 h-14 md:w-96 placeholder:text-opacity-50 placeholder:text-desaturatedRed md:mx-0"
               type="email"
               placeholder="Email Address"
             />
